@@ -11,6 +11,7 @@ body {
     --text-color: rgb(18, 1, 103);
     --link-block-color: rgb(235, 248, 254);
     --shadow-color: rgb(108, 145, 245);
+    --glass-effect-color: rgba(0, 0, 0, 0.4);
     
     background-color: var(--background-color);
     /* margin: 0; */
@@ -25,6 +26,7 @@ body.dark{
     --text-color:rgb(37, 1, 48);
     --link-block-color: rgb(190, 195, 249);
     --shadow-color: rgb(37, 1, 48);
+    --glass-effect-color: rgba(255, 255, 255, 0.6);
     
 }
 /*=============================================================================*/
@@ -41,6 +43,34 @@ nav{
 
 #darkButton{
     align-items: flex-start;
+}
+
+#backButton{
+    align-items: flex-end;
+    margin-left: 3rem;
+}
+
+.backButton {
+    background-color: var(--shadow-color);
+    width: 5rem;
+    height: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border-radius: 3em;
+
+    transition: 1s;
+    transform: scale(.9);
+}
+.backButton:hover, .backButton:focus {
+    transform: scale(1.1);
+}
+.backButton a {
+    color: var(--button-text-color);
+    text-decoration: none;
 }
 
 .theme-toggle-button {
@@ -200,23 +230,50 @@ iframe {
     text-align: center;
 }
 
+/*==================== container-text content of sub-pages ++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.container-text {
+    width: 75vw;
+    padding: 1.6rem;
+    margin: auto;
+    /* background-color: var(--glass-effect-color);
+    border: var(--button-text-color) 2px solid;
+    border-radius: 13px;
+    box-shadow: .5rem .5rem 1rem var(--shadow-color); */
+}
+
+.container-text p {
+    color: var(--button-text-color);
+}
+
 
 /*====================FOOTER++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
 .footer{
+    /* padding: 1rem 0;
+    background-color: var(--accent-color); */
+    /* position: absolute;
+    bottom: 0; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* border-top: 3px dotted black; */
+    width: 100vw;
+}
+
+#footer {
     padding: 1rem 0;
     background-color: var(--accent-color);
+    position: absolute;
     bottom: 0;
-    display: flex;
-    justify-content: center;
     border-top: 3px dotted black;
-    width: 100vw;
 }
 
 .footer p {
     font-size: .6em;
-    border-bottom: 3px dotted black;
+    /* border-bottom: 3px dotted black; */
     color: var(--shadow-color);
 }
 
