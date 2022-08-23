@@ -116,7 +116,7 @@ nav{
 header{
     background-color: var(--shadow-color);
     color: var(--button-text-color);
-    padding: 2rem 0;
+    padding: 2rem .5rem;
     width: 100vw;
     margin-bottom: 1rem;
     display:flex;
@@ -256,7 +256,7 @@ iframe {
 #footer {
     padding: 1rem 0;
     background-color: var(--accent-color);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     border-top: 3px dotted black;
 }
