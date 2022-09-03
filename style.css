@@ -12,6 +12,7 @@ body {
     --link-block-color: rgb(235, 248, 254);
     --shadow-color: rgb(108, 145, 245);
     --glass-effect-color: rgba(0, 0, 0, 0.4);
+    --block-button-a-color: rgb(108, 145, 245);
     
     background-color: var(--background-color);
     font-family: Tahoma, Geneva, Verdana, sans-serif;
@@ -26,6 +27,7 @@ body.dark{
     --link-block-color: rgb(190, 195, 249);
     --shadow-color: rgb(37, 1, 48);
     --glass-effect-color: rgba(255, 255, 255, 0.6);
+    --block-button-a-color: rgb(190, 195, 249);
     
 }
 /*=============================================================================*/
@@ -206,7 +208,7 @@ iframe {
     cursor: pointer;
 }
 .block-button a{
-    color: var(--shadow-color);
+    color: var(--block-button-a-color);
     text-decoration: none;
 }
 .block-button:hover {
