@@ -138,8 +138,12 @@ header{
     width: 100vw;
 }
 
+p {
+    padding: .5rem;
+}
+
 img{
-    margin: 3rem;
+    margin: 2rem;
     width: 150px;
     aspect-ratio: 1;
     overflow: hidden;
@@ -147,8 +151,16 @@ img{
     border-radius: 5px;
 }
 
-p {
+.linkBlocks h2 {
+    color: var(--shadow-color);
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.linkBlocks p {
     padding: 1rem;
+    margin-bottom: 3.6rem;
 }
 
 a {
@@ -164,6 +176,8 @@ border-radius: 13px;
 box-shadow: .5rem .5rem 1rem var(--shadow-color);
 overflow: hidden;
 transition: 1s;
+
+position: relative;
 }
 .linkBlocks:hover{
     transform: scale(1.1);
@@ -196,6 +210,8 @@ iframe {
 .btn-container {
     width: 100%;
     display: flex;
+    position: absolute;
+    bottom: .5rem;
 }
 .block-button {
     background-color: var(--button-text-color);
