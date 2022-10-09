@@ -142,7 +142,7 @@ p {
     padding: .5rem;
 }
 
-img{
+.container1 img{
     margin: 2rem;
     width: 150px;
     aspect-ratio: 1;
@@ -257,6 +257,21 @@ iframe {
 
 .container-text p {
     color: var(--button-text-color);
+}
+
+.container-image {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.container-text img{
+    /* margin-right: 3rem; */
+    padding: .5rem;
+    width: 300px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    box-shadow: 1rem 1rem 3rem var(--shadow-color);
+    border-radius: 5px;
 }
 
 
