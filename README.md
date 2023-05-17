@@ -1,5 +1,5 @@
 # Portfolio
- collection of demonstration projects
+This is a collection of demonstration projects, and is a work in progress.
 
 The webpage itself is made with HTML, CSS (including some Grid), and a bit of JavaScript to allow a dark-mode toggle.
 
